@@ -8,17 +8,13 @@ $menuXML = <<<XML
 
 	<item id="services" text="Services" link="devon-building-services" title="" key="s">
 
-		<item id="exterior" text="Exteriors" link="building-services/exterior-gardens-garages" title="" key="e" />
-
-		<item id="interior" text="Interiors" link="building-services/interior-rooms" title="" key="i" />
+		<item id="extensions" text="Extentions" link="building-services/extentions-refurbishments" title="" key="e" />
 
 		<item id="kitchen" text="Kitchens" link="building-services/kitchens" title="" key="k" />
 
-		<item id="bathroom" text="Bathrooms" link="building-services/bathrooms" title="" key="b" />
+		<item id="bathroom" text="Bathrooms" link="building-services/bathrooms-wetrooms" title="" key="b" />
 
-		<item id="carpentry" text="Carpentry" link="building-services/carpentry" title="" key="w" />
-
-		<item id="commercial" text="Commercial" link="building-services/commercial" title="" key="o" />
+		<item id="projects" text="Projects" link="building-services/projects" title="" key="p" />
 
 	</item>
 

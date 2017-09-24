@@ -602,19 +602,17 @@ input, select, textarea
 	width: 60%;
 	font-family: arial, helvetica, helv, freesans, sans-serif;
 	font-size: 1em;
-	padding: 2px 3px;
+	padding: 3px 5px;
 	margin: 0;
 	color: #444;
-	background-color: #f5f5f5;
-	border: 1px solid #888;
-	border-radius: 1px;
+	background-color: #ddd;;
+	border: 0 none;
 }
 
 input:focus, textarea:focus, select:focus
 {
 	color: #000;
-	background-color: #fff;
-	border-color: #da251c;
+	background-color: #eee;
 	box-shadow: none;
 }
 
@@ -634,15 +632,22 @@ input:focus, textarea:focus, select:focus
 ol.form button
 {
 	font-weight: bold;
-	padding: 0.2em 1em;
+	padding: 0.5em 3em;
 	margin: 6px 0 6px 30%;
 	cursor: pointer;
+	color: #fff;
+	background-color: #da251c;
+	border: 0 none;
 }
 
 ol.form li.button input:hover, ol.form li.button input:focus
 {
 	color: #fff;
-	background-position: 0 -47px;
+}
+
+ol.form button:hover, ol.form button:focus
+{
+	background-color: #eb6d67;
 }
 
 .inpsml { width: 10%; }
