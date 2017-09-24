@@ -31,7 +31,7 @@ if (!isset($NOBWC)) {
 
 <p><strong>&#169; <?php echo date('Y'); ?> Mike Taylor Ltd, Exeter, Devon. Registered in England and Wales No. 6981426</strong></p>
 <p>telephone: <a href="tel:+44-1392-824922"><strong>01392 824 922</strong></a> mobile: <a href="tel:+44-7917-203398"><strong>07917 203 398</strong></a> email: <strong><a href="[[<?php echo $page['contact']; ?>]]" class="email">info {at} taylorpropertymaintenance dot co dot uk</a></strong></p>
-<p><a href="http://www.optimalworks.net/">an OptimalWorks website</a> :: HTML5 / CSS3</p>
+<p><a href="http://www.optimalworks.net/">an OptimalWorks website</a></p>
 
 </footer>
 
