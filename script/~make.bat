@@ -1,0 +1,1 @@
+copy owl.js+owl_css.js+owl_dom.js+owl_xml.js+owl_innerhtml.js+owl_event.js+owl_timer.js+owl_image.js+owl_screen.js+owl_overlay.js+owl_lightbox.js+main.js  script_uncomp.js

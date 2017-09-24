@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+npm-debug.log
+
+log/
+logs/
+tacs/cache/
+
+Thumbs.db
+.DS_Store

@@ -1,0 +1,12 @@
+# contact file
+AddType text/x-vcard vcf
+
+# rewrite default URL
+RewriteEngine on
+#RewriteCond %{HTTP_HOST} !^www\.taylorpropertymaintenance\.co\.uk [NC]
+#RewriteRule ^/?(.*)$ http://www.taylorpropertymaintenance.co.uk/$1 [L,R=301]
+
+# main view loader
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
