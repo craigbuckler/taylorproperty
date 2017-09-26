@@ -25,7 +25,7 @@ body.sub
 
 #page
 {
-	width: 880px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
@@ -46,18 +46,19 @@ body.sub header
 {
 	display: inline;
 	float: right;
+	max-width: 25%;
 	margin: 0;
 }
 
 #tag
 {
-	width: 600px;
-	height: 74px;
+	height: 64px;
 	font-size: 1.5em;
 	text-align: center;
-	line-height: 74px;
+	line-height: 1;
 	font-weight: bold;
 	font-style: italic;
+	padding-top: 10px;
 	margin: 0;
 }
 
@@ -72,7 +73,7 @@ body.sub header
 	position: absolute;
 	left: 0;
 	top: 160px;
-	width: 880px;
+	width: 100%;
 	height: 240px;
 	padding: 0;
 	margin: 0;
@@ -89,14 +90,14 @@ body.sub header
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	background-position: 0 0;
+	background-position: 50% 0;
 	background-repeat: no-repeat;
 }
 
 #pageimage a:link, #pageimage a:visited
 {
 	display: block;
-	width: 820px;
+	width: 90%;
 	height: 200px;
 	text-align: right;
 	font-size: 4em;
@@ -109,53 +110,26 @@ body.sub header
 
 #pageimage li > a:link, #pageimage li > a:visited
 {
-	color: rgba(255,255,255,0.4);
+	color: rgba(255,255,255,0.7);
 }
 
 #pageimage li > a:hover, #pageimage li > a:focus
 {
-	color: rgba(255,255,255,0.6);
+	color: rgba(255,255,255,0.9);
 }
 
 #pageimage li.bathroom { background-image: url("../images/header/bathroom.jpg"); }
-
 #pageimage li.kitchen { background-image: url("../images/header/kitchen.jpg"); }
-#pageimage li.kitchen a:link, #pageimage li.kitchen a:visited
-{
-	height: 130px;
-	padding-top: 80px;
-}
-
 #pageimage li.interior { background-image: url("../images/header/interior.jpg"); }
-#pageimage li.interior a:link, #pageimage li.interior a:visited
-{
-	text-align: left;
-}
-
 #pageimage li.exterior { background-image: url("../images/header/exterior.jpg"); }
-#pageimage li.exterior a:link, #pageimage li.exterior a:visited
-{
-	text-align: right;
-	width: 320px;
-	height: 150px;
-	padding-left: 530px;
-	padding-top: 60px;
-}
-
 #pageimage li.commercial { background-image: url("../images/header/commercial.jpg"); }
-#pageimage li.commercial a:link, #pageimage li.commercial a:visited
-{
-	text-align: right;
-	height: 60px;
-	padding-top: 150px;
-}
+
 
 /* navigation */
 nav ul
 {
 	display: inline;
 	float: left;
-	width: 51em;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -164,6 +138,12 @@ nav ul
 nav > ul
 {
 	position: absolute;
+	bottom: 300px;
+}
+
+body.sub nav > ul
+{
+	bottom: 110px;
 }
 
 nav li
@@ -178,7 +158,6 @@ nav li
 nav ul ul
 {
 	display: none;
-	width: 60em;
 	position: absolute;
 	left: 0;
 	padding: 12px 0;
@@ -195,10 +174,10 @@ nav a:link, nav a:visited, nav strong
 {
 	display: block;
 	width: 6.4em;
-	height: 1.3em;
-	font-size: 1.5em;
+	height: 2em;
+	font-size: calc(0.5em + 1.5vw);
 	font-weight: bold;
-	line-height: 1.3em;
+	line-height: 2em;
 	text-align: center;
 	text-decoration: none;
 	color: #da251c;
@@ -217,12 +196,13 @@ nav > ul > li > a:hover, nav > ul > li:hover > a, nav > ul > li > a:focus, nav >
 nav ul li:hover ul, nav ul li:focus ul
 {
 	display: block;
+	width: 100%;
 	z-index: 1;
 }
 
 nav ul ul a:link, nav ul ul a:visited, nav ul ul strong
 {
-	font-size: 1.2em;
+	font-size: calc(0.5em + 1vw);
 	width: 7em;
 	text-transform: none;
 	padding: 2px 0;
@@ -238,38 +218,17 @@ nav ul ul a:hover, nav ul ul a:focus, nav ul ul strong
 }
 
 /* content */
-article
-{
-	display: inline;
-	float: left;
-	width: 600px;
-}
-
-article, aside { padding: 30px 0; }
+article, aside { padding: 30px 10px; }
 
 /* aside */
-aside
-{
-	display: inline;
-	float: right;
-	width: 240px;
-}
-
-aside img
-{
-	display: block;
-	margin: 6px auto;
-}
-
 aside :first-child { margin-top: 0; }
 
 /* footer */
 footer
 {
 	clear: both;
-	width: 100%;
 	font-size: 0.85em;
-	padding: 8px 0;
+	padding: 8px 80px;
 	background-color: #da251c;
 }
 
@@ -277,7 +236,7 @@ footer img
 {
 	display: inline;
 	float: right;
-	margin: 2px 3px 0 0;
+	margin: 2px -76px 0 0;
 }
 
 footer p
@@ -308,10 +267,11 @@ footer a:hover, footer a:focus
 h1
 {
 	position: absolute;
-	left: 0;
+	left: 10px;
 	bottom: -4px;
 	font-weight: bold;
-	font-size: 2.2em;
+	font-size: 2em;
+	font-size: calc(1.5em + 1.6vw);
 	line-height: 1em;
 	padding: 0;
 	margin: 0;
@@ -350,6 +310,11 @@ p.member
 	margin-bottom: 2em;
 }
 
+p.member img {
+	display: block;
+	margin: 0 auto;
+}
+
 ol, ul
 {
 	margin: 1em 0 1.5em 3em;
@@ -372,7 +337,7 @@ li a
 
 blockquote
 {
-	width: 26em;
+	width: 70%;
 	padding: 10px 40px;
 	margin: 1em auto;
 	color: #777;
@@ -410,6 +375,11 @@ cite a:link, cite a:visited { text-decoration: none; }
 img
 {
 	border: 0 none;
+}
+
+#page img, footer img {
+	max-width: 100%;
+	height: auto;
 }
 
 img.photo
@@ -456,6 +426,7 @@ p.member a
 iframe
 {
 	display: block;
+	width: 100%;
 	margin: 1em auto;
 	border: 1px solid #000;
 }
@@ -667,6 +638,7 @@ ol.form button:hover, ol.form button:focus
 {
 	display: inline;
 	float: left;
+	max-width: 46%;
 	margin: 5px;
 }
 
@@ -783,4 +755,78 @@ ol.form button:hover, ol.form button:focus
 	padding-right: 14px;
 	color: #fff;
 	background: url("../images/lightbox/close.gif") 100% 65% no-repeat;
+}
+
+@media (min-width: 880px) {
+
+	#tag {
+		height: 50px;
+		padding-top: 24px;
+	}
+
+	#pageimage li.kitchen a:link, #pageimage li.kitchen a:visited
+	{
+		height: 130px;
+		padding-top: 80px;
+	}
+
+	#pageimage li.interior a:link, #pageimage li.interior a:visited
+	{
+		text-align: left;
+	}
+
+	#pageimage li.exterior a:link, #pageimage li.exterior a:visited
+	{
+		text-align: right;
+		width: 320px;
+		height: 150px;
+		padding-left: 530px;
+		padding-top: 60px;
+	}
+
+	#pageimage li.commercial a:link, #pageimage li.commercial a:visited
+	{
+		text-align: right;
+		height: 60px;
+		padding-top: 150px;
+	}
+
+	nav a:link, nav a:visited, nav strong {
+		font-size: 1.5em;
+		height: 1.3em;
+		line-height: 1.3em;
+	}
+
+	nav ul ul a:link, nav ul ul a:visited, nav ul ul strong
+	{
+		font-size: 1.2em;
+	}
+
+	h1 {
+		left: 0;
+		font-size: 2.2em;
+	}
+
+	article
+	{
+		display: inline;
+		float: left;
+		max-width: 600px;
+	}
+
+	article, aside { padding: 30px 0; }
+
+	aside
+	{
+		display: inline;
+		float: right;
+		width: 240px;
+	}
+
+	aside img
+	{
+		display: block;
+		margin: 6px auto;
+	}
+
 }
