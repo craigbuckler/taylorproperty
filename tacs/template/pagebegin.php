@@ -39,7 +39,7 @@ $COMPANY = 'Taylor Property Maintenance';
 <head>
 <meta charset="UTF-8">
 
-<title>[[PAGETITLE]] | [[<?php echo ($PAGETITLE != $COMPANY ? $COMPANY : 'Builders and decorators in the Exeter area including Kenton, Exminster and Topsham'); ?>]]</title>
+<title>[[PAGETITLE]] | [[<?php echo ($PAGETITLE != $COMPANY ? $COMPANY : 'building and renovation in the Exeter area including Kenton, Exminster and Topsham'); ?>]]</title>
 
 <meta name="description" content="[[PAGEDESC]]" />
 <meta name="keywords" content="[[PAGEKEYS]], building, maintenance, construction, refurbishment, renovation, contractor, painting, electrical, plumbing, decorating, tiling, home improvement, handyman, handiman, carpentry, repair, gardening, project, home, business, industrial, sustainable, green, ethical" />
@@ -59,6 +59,7 @@ $COMPANY = 'Taylor Property Maintenance';
 <![endif]-->
 
 <!-- stylesheets -->
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link type="text/css" rel="stylesheet" media="all" href="[[root]]styles/styles.css" />
 
 <!-- favicon -->
