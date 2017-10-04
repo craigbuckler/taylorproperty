@@ -129,8 +129,8 @@ if (!$success) {
 </li>
 
 <li>
-	<p class="help">Please enter your questions or comments.</p>
-	<label for="query">Questions:</label>
+	<p class="help">Please enter your project details and questions.</p>
+	<label for="query">Project details:</label>
 	<textarea id="query" name="query" rows="3" cols="20"><?php echo $query; ?></textarea>
 </li>
 

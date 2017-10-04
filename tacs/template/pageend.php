@@ -11,11 +11,13 @@ if (!isset($NOBWC)) {
 ?>]]
 <h2>Buy With Confidence</h2>
 
-<p>[[COMPANY]] belong to &#8220;<a href="http://www.buywithconfidence.gov.uk/">Buy With Confidence</a>&#8221;, a scheme run by Devon County Council Trading Standards to help you to find good, honest, local businesses and to avoid the risk of using a rogue trader.</p>
+<p>[[COMPANY]] has a &#8220;<a href="https://www.buywithconfidence.gov.uk/profile/mike-taylor-ltd-t-a-taylor-property-maintenance/7172/">Buy With Confidence</a>&#8221; <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span> rating. The scheme is operated by Devon County Council Trading Standards and helps you find good, honest, local businesses without the risk of using a rogue trader.</p>
 
-<p class="member"><a href="http://www.buywithconfidence.gov.uk/"><img src="[[root]]images/devon-buy-with-confidence.png" width="227" height="174" alt="Buy With Confidence" title="Devon County Council Trading Standards Buy With Confidence Scheme" />Approved Membership Number 0398</a></p>
+<p class="member"><a href="https://www.buywithconfidence.gov.uk/profile/mike-taylor-ltd-t-a-taylor-property-maintenance/7172/"><img src="[[root]]images/devon-buy-with-confidence.png" width="227" height="174" alt="Buy With Confidence" title="Devon County Council Trading Standards Buy With Confidence Scheme" />Approved Membership Number 0398</a></p>
 
-<p class="member"><a href="http://www.wedi.co.uk/"><img src="[[root]]images/wedi.png" width="227" height="51" alt="wedi" title="Approved wedi Installer" />Approved Installer</a></p>
+<p class="member"><a href="http://www.wedi.co.uk/"><img src="[[root]]images/wedi.png" width="227" height="51" alt="wedi" title="Approved wedi Installer" />wetroom and steam room<br />approved installer</a></p>
+
+<p class="member"><a href="https://www.facebook.com/taylorpropertymaintenancedevon/"><img src="[[root]]images/icons/facebook-logo.png" width="40" height="40" alt="Facebook" />find us on Facebook</a></p>
 [[<?php
 }
 ?>]]
@@ -27,7 +29,7 @@ if (!isset($NOBWC)) {
 
 <footer>
 
-<a href="http://www.buywithconfidence.gov.uk/"><img src="[[root]]images/buy-with-confidence.png" width="62" height="61" alt="Buy With Confidence" title="Devon County Council Buy With Confidence" /></a>
+<a href="https://www.buywithconfidence.gov.uk/profile/mike-taylor-ltd-t-a-taylor-property-maintenance/7172/"><img src="[[root]]images/buy-with-confidence.png" width="62" height="61" alt="Buy With Confidence" title="Devon County Council Buy With Confidence" /></a>
 
 <p><strong>&#169; <?php echo date('Y'); ?> Mike Taylor Ltd, Exeter, Devon. Registered in England and Wales No. 6981426</strong></p>
 <p>telephone: <a href="tel:+44-1392-824922"><strong>01392 824 922</strong></a> mobile: <a href="tel:+44-7917-203398"><strong>07917 203 398</strong></a> email: <strong><a href="[[<?php echo $page['contact']; ?>]]" class="email">info {at} taylorpropertymaintenance dot co dot uk</a></strong></p>

@@ -119,9 +119,13 @@ body.sub header
 }
 
 #pageimage li.bathroom { background-image: url("../images/header/bathroom.jpg"); }
+#pageimage li.bathroom2 { background-image: url("../images/header/bathroom2.jpg"); }
 #pageimage li.kitchen { background-image: url("../images/header/kitchen.jpg"); }
+#pageimage li.kitchen2 { background-image: url("../images/header/kitchen2.jpg"); }
 #pageimage li.interior { background-image: url("../images/header/interior.jpg"); }
 #pageimage li.exterior { background-image: url("../images/header/exterior.jpg"); }
+#pageimage li.extension { background-image: url("../images/header/extension.jpg"); }
+#pageimage li.extension2 { background-image: url("../images/header/extension2.jpg"); }
 #pageimage li.commercial { background-image: url("../images/header/commercial.jpg"); }
 
 
@@ -335,6 +339,35 @@ li a
 	display: block;
 }
 
+ul.bwc {
+	list-style-type: none;
+}
+
+ul.bwc li {
+	clear: both;
+	margin: 0;
+}
+
+.metric {
+	float: left;
+	width: 40%;
+	text-align: right;
+	padding: 0.3em;
+	font-weight: bold;
+}
+
+.rating {
+	font-size: 1.2em;
+	color: #f90;
+	white-space: nowrap;
+	letter-spacing: -0.15em;
+}
+
+.bwc .rating {
+	font-size: 1.75em;
+	line-height: 1;
+}
+
 blockquote
 {
 	width: 70%;
@@ -480,7 +513,7 @@ div.vcard a.email, div.vcard a.facebook
 }
 
 div.vcard a.facebook {
-	background-image: url("../images/icons/facebook.png")
+	background-image: url("../images/icons/facebook.png");
 }
 
 a.add:link, a.contact:link,
@@ -770,17 +803,18 @@ ol.form button:hover, ol.form button:focus
 		padding-top: 80px;
 	}
 
-	#pageimage li.interior a:link, #pageimage li.interior a:visited
+	#pageimage li.extension a:link, #pageimage li.extension a:visited
 	{
 		text-align: left;
+		padding-top: 90px;
 	}
 
-	#pageimage li.exterior a:link, #pageimage li.exterior a:visited
+	#pageimage li.extension2 a:link, #pageimage li.extension2 a:visited
 	{
 		text-align: right;
 		width: 320px;
 		height: 150px;
-		padding-left: 530px;
+		padding-left: 400px;
 		padding-top: 60px;
 	}
 
