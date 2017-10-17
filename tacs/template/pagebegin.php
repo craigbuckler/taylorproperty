@@ -1,5 +1,5 @@
 <?php
-// Taylor Property Maintenance
+// Taylor Construction
 // (C) Optimalworks Ltd - http://www.optimalworks.net/
 
 // runtime variables
@@ -32,7 +32,7 @@ $thispage = "http://$host$pageuri";
 $local = (strpos($host , '.co') === false);
 $root = ($local ? '/taylorproperty/' : '/');
 
-$COMPANY = 'Taylor Property Maintenance';
+$COMPANY = 'Taylor Construction';
 
 ?>]]<!DOCTYPE html>
 <html lang="en">
@@ -79,7 +79,7 @@ $COMPANY = 'Taylor Property Maintenance';
 
 <p id="logo"><a href="[[root]]"><img src="[[root]]images/taylor-property-maintenance.png" width="191" height="100" alt="[[COMPANY]]" /></a></p>
 
-<p id="tag"><a href="[[<?php echo $page['contact']; ?>]]">Property Maintenance Services &#8211; 01392 824 922</a></p>
+<p id="tag"><a href="[[<?php echo $page['contact']; ?>]]">Property Construction &#8211; 01392 824 922</a></p>
 
 <!-- main page image -->
 [[<?php if (!$inSub) { ?>]]

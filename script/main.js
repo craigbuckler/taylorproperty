@@ -1,5 +1,5 @@
 /*
-Taylor Property Maintenance JavaScript
+Taylor Construction JavaScript
 (C) Optimalworks.net
 */
 
@@ -37,7 +37,7 @@ tpm.Initialise = function() {
 				} }
 			]
 		},
-		
+
 		// fader
 		Fader: {
 			Element: "#pageimage",
@@ -168,53 +168,53 @@ tpm.Validate = function() {
 tpm.Fader = function() {
 
 	var $C;
-	
+
 	// initalise all faders
 	function Init() {
 		$C = tpm.Setup.Fader;
 		owl.Each(owl.Dom.Get($C.Element), function(e) { new Fader(e); });
 	}
-	
+
 	// fader
 	function Fader(element) {
 		this.Element = element;
 		this.Item = owl.Dom.Descendents(element, 1);
 		if (this.Item.length > 1) {
-		
+
 			// apply z-index
 			owl.Each(this.Item, function(e, i) { e.style.zIndex = i; });
-			
+
 			// set up fade animation
 			this.Current = this.Item.length - 1;
 			this.Start();
-			
+
 		}
 	}
 
 	// start fader
 	Fader.prototype.Start = function() {
-	
+
 		var T = this;
 		var E = this.Item[this.Current];
 		this.Timer = new owl.Timer(100, 0, -$C.Step, $C.Pause, $C.Delay, 0);
 		this.Timer.CallBack = function(t) { owl.Css.Opacity(E, t.Value, false); };
 		this.Timer.OnStop = function(t) {
-			
+
 			// move slide to back
 			E.style.zIndex = E.style.zIndex - T.Item.length;
 			owl.Css.Opacity(E, 100);
-			
+
 			// reset timer
 			T.Timer = null;
 			T.Current--;
 			if (T.Current < 0) T.Current = T.Item.length - 1;
 			T.Start();
-			
+
 		};
 		this.Timer.Start();
-	
+
 	};
-	
+
 	return { Init: Init };
 
 }();
