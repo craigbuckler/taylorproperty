@@ -52,7 +52,7 @@ owl.Number = function() {
 		var ret = parseInt(str, 10);
 		return (isNaN(ret) ? 0 : ret);
 	}
-	
+
 	// sign - returns -1, 0 or 1
 	function Sign(num) {
 		if (isNaN(num)) num = 0;
@@ -140,7 +140,7 @@ if (owl && !owl.Array) owl.Array = function() {
 		}
 		return ret;
 	}
-	
+
 	// make (array arr, default value/array def)
 	function Make(arr, def) {
 		return (arr ? (Is(arr) ? arr : [arr]) : (typeof def == "undefined" ? [] : (Is(def) ? def : [def])));
@@ -350,8 +350,8 @@ if (owl && !owl.Css) owl.Css = function() {
 			}
 		);
 	}
-	
-	
+
+
 	// fetch the computed style of an element, e.g. element, "width"
 	function ComputedStyle(element, rule) {
 		var value = "";
@@ -524,7 +524,7 @@ if (owl && owl.Css && !owl.Dom && document.getElementById && document.getElement
 		return nodes;
 	}
 
-	
+
 	// find a node by type and work up parents until found
 	function Ancestors(nodes, nodename) {
 		var ret = [];
@@ -536,7 +536,7 @@ if (owl && owl.Css && !owl.Dom && document.getElementById && document.getElement
 		if (!owl.Array.Is(nodes)) ret = ret[0];
 		return ret;
 	}
-	
+
 
 	// clones nodes (from, to, move nodes, clear original children)
 	function Clone(nFrom, nTo, move, clear) {
@@ -641,8 +641,8 @@ if (owl && !owl.Xml) owl.Xml = function() {
 		}
 		return xml;
 	}
-	
-	
+
+
 	// create node event (private)
 	function AddEvent(node, evt, fn) { node[evt] = function() { return eval(fn); }; }
 
@@ -673,10 +673,10 @@ if (owl && !owl.Xml) owl.Xml = function() {
 
 				// append node
 				domNode = domNode.appendChild(thisNode);
-				
+
 				// attach events
 				for (evt in handler) AddEvent(domNode, evt, handler[evt]);
-				
+
 			}
 			else if (xmlDoc.nodeType == 3) {
 				// text node
@@ -688,7 +688,7 @@ if (owl && !owl.Xml) owl.Xml = function() {
 
 		// recurse child nodes
 		for (var i = 0; i < xmlDoc.childNodes.length; i++) Copy(xmlDoc.childNodes[i], domNode, level+1);
-		
+
 		// return last child added
 		return (domNode.lastChild ? domNode.lastChild : domNode);
 	}
@@ -994,7 +994,7 @@ if (owl && !owl.Timer) {
 				this.Start();
 			}
 		};
-		
+
 		// returns the step value
 		this.GetStep = function() { return Inc; };
 
@@ -1785,7 +1785,7 @@ if (owl && owl.Event && owl.innerHTML && owl.Image && owl.Overlay && !owl.Lightb
 	}, 99999);
 
 }/*
-Taylor Property Maintenance JavaScript
+Taylor Construction JavaScript
 (C) Optimalworks.net
 */
 
@@ -1823,7 +1823,7 @@ tpm.Initialise = function() {
 				} }
 			]
 		},
-		
+
 		// fader
 		Fader: {
 			Element: "#pageimage",
@@ -1954,53 +1954,53 @@ tpm.Validate = function() {
 tpm.Fader = function() {
 
 	var $C;
-	
+
 	// initalise all faders
 	function Init() {
 		$C = tpm.Setup.Fader;
 		owl.Each(owl.Dom.Get($C.Element), function(e) { new Fader(e); });
 	}
-	
+
 	// fader
 	function Fader(element) {
 		this.Element = element;
 		this.Item = owl.Dom.Descendents(element, 1);
 		if (this.Item.length > 1) {
-		
+
 			// apply z-index
 			owl.Each(this.Item, function(e, i) { e.style.zIndex = i; });
-			
+
 			// set up fade animation
 			this.Current = this.Item.length - 1;
 			this.Start();
-			
+
 		}
 	}
 
 	// start fader
 	Fader.prototype.Start = function() {
-	
+
 		var T = this;
 		var E = this.Item[this.Current];
 		this.Timer = new owl.Timer(100, 0, -$C.Step, $C.Pause, $C.Delay, 0);
 		this.Timer.CallBack = function(t) { owl.Css.Opacity(E, t.Value, false); };
 		this.Timer.OnStop = function(t) {
-			
+
 			// move slide to back
 			E.style.zIndex = E.style.zIndex - T.Item.length;
 			owl.Css.Opacity(E, 100);
-			
+
 			// reset timer
 			T.Timer = null;
 			T.Current--;
 			if (T.Current < 0) T.Current = T.Item.length - 1;
 			T.Start();
-			
+
 		};
 		this.Timer.Start();
-	
+
 	};
-	
+
 	return { Init: Init };
 
 }();

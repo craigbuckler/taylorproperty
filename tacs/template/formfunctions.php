@@ -1,7 +1,7 @@
 <?php
 // contact form
-$website = 'Taylor Property Maintenance website';
-$salesemail = 'info@taylorpropertymaintenance.co.uk';
+$website = 'Taylor Construction website';
+$salesemail = 'info@miketaylorltd.co.uk';
 if ($local) $salesemail = 'craig@optimalworks.net';
 
 // ________________________________________________________

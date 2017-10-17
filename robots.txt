@@ -1,5 +1,5 @@
 ﻿User-agent: *
-Sitemap: http://www.taylorpropertymaintenance.co.uk/sitemap.xml
+Sitemap: http://www.miketaylorltd.co.uk/sitemap.xml
 Disallow: /content
 Disallow: /logs
 Disallow: /smtp
