@@ -16,6 +16,7 @@ $redir = array(
 	'kitchen' => $root . 'building-services/kitchens',
 	'bathroom' => $root . 'building-services/bathrooms-wetrooms',
 	'wetroom' => $root . 'building-services/bathrooms-wetrooms',
+	'exten' => $root . 'building-services/extensions-refurbishments',
 	'exterior' => $root . 'building-services/extensions-refurbishments',
 	'outside' => $root . 'building-services/extensions-refurbishments',
 	'garden' => $root . 'building-services/extensions-refurbishments',
