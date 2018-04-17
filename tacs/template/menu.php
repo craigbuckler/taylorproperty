@@ -8,7 +8,7 @@ $menuXML = <<<XML
 
 	<item id="services" text="Services" link="devon-building-services" title="" key="s">
 
-		<item id="extensions" text="Extentions" link="building-services/extentions-refurbishments" title="" key="e" />
+		<item id="extensions" text="Extensions" link="building-services/extensions-refurbishments" title="" key="e" />
 
 		<item id="kitchen" text="Kitchens" link="building-services/kitchens" title="" key="k" />
 
