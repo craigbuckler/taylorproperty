@@ -15,6 +15,8 @@ if (!isset($NOBWC)) {
 
 <p class="member"><a href="https://www.buywithconfidence.gov.uk/profile/mike-taylor-ltd-t-a-taylor-property-maintenance/7172/"><img src="[[root]]images/devon-buy-with-confidence.png" width="227" height="174" alt="Buy With Confidence" title="Devon County Council Trading Standards Buy With Confidence Scheme" />Approved Membership Number 0398</a></p>
 
+<p class="member"><a href="http://www.devonbuildingcontrol.gov.uk/"><img src="[[root]]images/devon-building-control-partnership.png" width="227" height="173" alt="Devon Building Control" title="Devon Building Control Certificate of Excellence award" />Devon Building Control Partnership<br />Certificate of Excellence award winner</a></p>
+
 <p class="member"><a href="http://www.wedi.co.uk/"><img src="[[root]]images/wedi.png" width="227" height="51" alt="wedi" title="Approved wedi Installer" />wetroom and steam room<br />approved installer</a></p>
 
 <p class="member"><a href="https://www.facebook.com/taylorpropertymaintenancedevon/"><img src="[[root]]images/icons/facebook-logo.png" width="40" height="40" alt="Facebook" />find us on Facebook</a></p>
