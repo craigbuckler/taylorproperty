@@ -22,7 +22,7 @@ function post($var, $default='', $maxlength=9999) {
 // clean a form variable
 function cleanvar($v) {
 	$v = (string) $v;
-	if (get_magic_quotes_gpc()) $v = stripslashes($v);
+	$v = stripslashes($v);
 	$v = trim($v);
 	$v = str_replace("\r", '', $v);
 	$v = preg_replace('/[ \t\f]+/', ' ', $v);

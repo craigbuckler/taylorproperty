@@ -4,7 +4,6 @@ $host = $_SERVER['HTTP_HOST'];
 $page = str_replace('?' . $_SERVER['QUERY_STRING'], '', $_SERVER['REQUEST_URI']);
 $cached = $page;
 $local = (strpos($_SERVER['HTTP_HOST'] , '.co') === false);
-if ($local) $page = str_replace('/taylorproperty', '', $page);
 $page = str_replace('/', '_', preg_replace('/^\/+|\/+$/', '', $page));
 if ($page == '') $page = 'home';
 

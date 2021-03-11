@@ -319,6 +319,16 @@ p.member img {
 	margin: 0 auto;
 }
 
+p.embiggen {
+	font-size: 2em;
+	text-align: center;
+	margin: 1em auto;
+}
+
+p.embiggen a:link, p.embiggen a:visited {
+	text-decoration: none;
+}
+
 ol, ul
 {
 	margin: 1em 0 1.5em 3em;

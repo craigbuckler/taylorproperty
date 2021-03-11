@@ -30,7 +30,7 @@ $host = $_SERVER['HTTP_HOST'];
 $pageuri = $_SERVER['REQUEST_URI'];
 $thispage = "http://$host$pageuri";
 $local = (strpos($host , '.co') === false);
-$root = ($local ? '/taylorproperty/' : '/');
+$root = '/';
 
 $COMPANY = 'Taylor Construction';
 
@@ -79,7 +79,7 @@ $COMPANY = 'Taylor Construction';
 
 <p id="logo"><a href="[[root]]"><img src="[[root]]images/taylor-property-maintenance.png" width="191" height="100" alt="[[COMPANY]]" /></a></p>
 
-<p id="tag"><a href="[[<?php echo $page['contact']; ?>]]">Property Construction &#8211; 01392 824 922</a></p>
+<p id="tag"><a href="[[<?php echo $page['contact']; ?>]]">Property Construction &#8211; 07917 203 398</a></p>
 
 <!-- main page image -->
 [[<?php if (!$inSub) { ?>]]
