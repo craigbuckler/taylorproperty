@@ -4,7 +4,7 @@ $addr=strtolower($_SERVER['REQUEST_URI']);
 $url = '';
 
 $host = $_SERVER['HTTP_HOST'];
-$root = (strpos($host , '.co') === false ? '/taylorproperty/' : '/');
+$root = '/';
 
 // redirects
 $redir = array(
@@ -14,22 +14,22 @@ $redir = array(
 	'service' => $root . 'devon-building-services',
 	'price' => $root . 'devon-building-services',
 	'kitchen' => $root . 'building-services/kitchens',
-	'bathroom' => $root . 'building-services/bathrooms-wetrooms',
-	'wetroom' => $root . 'building-services/bathrooms-wetrooms',
+	'bath' => $root . 'building-services/bathrooms-wetrooms',
+	'wet' => $root . 'building-services/bathrooms-wetrooms',
 	'exten' => $root . 'building-services/extensions-refurbishments',
-	'exterior' => $root . 'building-services/extensions-refurbishments',
+	'exter' => $root . 'building-services/extensions-refurbishments',
 	'outside' => $root . 'building-services/extensions-refurbishments',
 	'garden' => $root . 'building-services/extensions-refurbishments',
 	'garage' => $root . 'building-services/extensions-refurbishments',
-	'interior' => $root . 'building-services/extensions-refurbishments',
+	'inter' => $root . 'building-services/extensions-refurbishments',
 	'inside' => $root . 'building-services/extensions-refurbishments',
 	'wood' => $root . 'building-services/extensions-refurbishments',
 	'carpent' => $root . 'building-services/extensions-refurbishments',
-	'commercial' => $root . 'building-services/projects',
+	'commer' => $root . 'building-services/projects',
 	'project' => $root . 'building-services/projects',
 	'other' => $root . 'building-services/projects',
 	'about' => $root . 'about-us',
-	'testimonial' => $root . 'about-us/customer-testimonials',
+	'test' => $root . 'about-us/customer-testimonials',
 	'contact' => $root . 'contact-us',
 	'quote' => $root . 'contact-us',
 	'tel' => $root . 'contact-us',
