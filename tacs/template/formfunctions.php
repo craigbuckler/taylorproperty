@@ -1,7 +1,7 @@
 <?php
 // contact form
 $website = 'Taylor Construction website';
-$salesemail = 'info@miketaylorltd.co.uk';
+$salesemail = 'taylorcmltd@gmail.com';
 if ($local) $salesemail = 'craig@optimalworks.net';
 
 // ________________________________________________________
