@@ -1,11 +1,12 @@
 version: '3'
 services:
 
-  php73site:
-    image: php8
-    container_name: tpm
+  php81site:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: php81site
     volumes:
       - ./:/var/www/html
     ports:
       - "8080:80"
-      - "443:443"

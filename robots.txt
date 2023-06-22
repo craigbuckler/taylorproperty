@@ -1,5 +1,5 @@
 ﻿User-agent: *
-Sitemap: http://www.miketaylorltd.co.uk/sitemap.xml
+Sitemap: http://www.taylorcmltd.com/sitemap.xml
 Disallow: /content
 Disallow: /logs
 Disallow: /smtp

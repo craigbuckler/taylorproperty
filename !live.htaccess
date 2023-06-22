@@ -1,7 +1,7 @@
 # contact file
 AddType text/x-vcard vcf
 
-# rewrite to miketaylorltd.com
+# rewrite to taylorcmltd.com
 RewriteEngine on
 RewriteCond %{HTTP_HOST} !^www\.taylorcmltd\.com [NC]
 RewriteRule ^/?(.*)$ http://www.taylorcmltd.com/$1 [L,R=301]

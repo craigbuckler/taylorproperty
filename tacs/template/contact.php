@@ -92,7 +92,7 @@ if (isset($_POST['submit'])) {
 // show form
 if (!$success) {
 
-	if ($error == '') echo '<p>Please call <a href="tel:+44-7917-203398">07917 203 398</a> or email <a href="#" class="email">info {at} taylorcmltd dot com</a> for a no-obligation discussion about your project.</p><p>Alternatively, please complete our enquiry form and we will call you.</p>';
+	if ($error == '') echo '<p>Please call <a href="tel:+44-7917-203398">07917 203 398</a> or email <a href="#" class="email">taylorcmltd {at} gmail dot com</a> for a no-obligation discussion about your project.</p><p>Alternatively, please complete our enquiry form and we will call you.</p>';
 
 ?>
 

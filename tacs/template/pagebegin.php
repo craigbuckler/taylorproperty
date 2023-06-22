@@ -32,7 +32,7 @@ $thispage = "http://$host$pageuri";
 $local = (strpos($host , '.co') === false);
 $root = '/';
 
-$COMPANY = 'Taylor Construction';
+$COMPANY = 'Taylor Construction Management Ltd';
 
 ?>]]<!DOCTYPE html>
 <html lang="en">
